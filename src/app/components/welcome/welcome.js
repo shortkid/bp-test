@@ -1,7 +1,7 @@
 angular.module( 'ngMyApp.welcome', [
   'ui.router',
   'ui.bootstrap'
-]);
+])
 
 .config(function config( $stateProvider ) {
 

@@ -8,6 +8,9 @@ gulp.task('clean', function (cb) {
 		config.paths.dist.js,
 		config.paths.dist.css,
 		config.paths.dist.html
-	], cb);
+	],{
+		'force': true
+	});
 
+	cb();
 });

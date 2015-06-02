@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('js',function() {
 	
-	return gulp
+	gulp
 		.src(config.paths.src.js)
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))

@@ -11,10 +11,10 @@ gulp.task('watch',['clean', 'js', 'css', 'html'], function() {
 	});
 	
 
-	gulp.watch( config.paths.src.css+"**/**/*", ['css'] );
+	gulp.watch( config.paths.src.css, ['css'] );
 	
 
-	gulp.watch( config.paths.src.js+"**/**/**/*", ['js'] )
+	gulp.watch( config.paths.src.js, ['js'] )
 	    .on('change', config.bSync.reload);
 	
 

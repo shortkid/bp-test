@@ -1,5 +1,5 @@
 {
-	"appName" : "MyApp",
+	"appName" : "ngMyApp",
 	"src" : {
 		"js" : "src/app/**/**/**/*.js",
 		"css" : "src/scss/*.scss",

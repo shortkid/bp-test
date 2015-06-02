@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task('css',function() {
 
-	return gulp
+	gulp
 		.src(config.paths.src.css)
 		.pipe(scss({
 			'sourceMap'    : config.isDev,
