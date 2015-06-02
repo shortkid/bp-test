@@ -3,6 +3,6 @@ node_js:
   - "stable"
 
 before_script:
-  - npm install gulp-cli -g
+  - npm install gulp -g
 
 script: gulp travis
