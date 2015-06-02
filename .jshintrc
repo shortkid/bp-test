@@ -1,0 +1,28 @@
+{
+  "node" : true,
+  "browser" : true,
+  "es3" : false,
+  "freeze" : true,
+  "funcscope" : true,
+  "globalstrict" : true,
+  "latedef" : true,
+  "noarg"  : true,
+  "nocomma" : true,
+  "notypeof" : true,
+  "shadow"  : "inner",
+  "undef"   : true,
+  "unused"  : false,
+  "eqeqeq"  : true, 
+  "asi"     : true,
+  "debug" : true,
+  "smarttabs": true,
+  "esnext" : false,
+  "strict" : false,
+  "expr"  : true,
+  "loopfunc" : true,
+  "globals" : {
+    "define": true,
+    "exports": true,
+    "angular": true
+  }
+}

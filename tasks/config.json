@@ -1,0 +1,20 @@
+{
+	"appName" : "MyApp",
+	"src" : {
+		"js" : "src/app/**/**/**/*.js",
+		"css" : "src/scss/*.scss",
+		"html" : [ "src/index.jade", "src/pages/**/*.jade" ], 
+		"template" : [ "src/templates/**/**/**/*.tpl.jade", "src/templates/**/**/**/*.tpl.html" ]
+	},
+	"dist" : {
+		"js" : "dist/js/",
+		"css" : "dist/css/",
+		"html" : "dist/",
+		"template" : "html-cache/"
+	},
+	"test" : {
+		"tests" : "tests/spec/**/*.js",
+		"config" : "tests/karma.conf.js"
+	},
+	"bower": "./bower_components"
+}

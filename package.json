@@ -1,0 +1,46 @@
+{
+  "name": "gulp-angular-boiler",
+  "version": "1.0.0",
+  "description": "Basic Boiler Plate - Anjular+Gulp+Bootstrap",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.7.6",
+    "del": "^1.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-include-source": "0.0.5",
+    "gulp-jade": "^1.0.1",
+    "gulp-karma": "0.0.4",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-ng-html2js": "^0.2.0",
+    "gulp-ngdocs": "^0.2.10",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "jade": "^1.10.0",
+    "jshint-stylish": "^2.0.0",
+    "karma": "^0.12.35",
+    "karma-cli": "0.0.4",
+    "path": "^0.11.14",
+    "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-spec-reporter": "0.0.19",
+    "phantomjs": "^1.9.17"
+  }
+}

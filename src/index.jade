@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title Welcome
+
+    if prod
+      link(rel="stylesheet", href="/css/style.css")
+    else
+      <!-- include:js(js/*.js) -->
+      <!-- include:css(css/*.css) -->
+
+  body(data-ng-app='#{appName}', data-ng-strict-di=prod)
+
+
+    include jade/header/header.jade
+
+
+    if prod
+      script(src='/js/app.min.js')
+      script(src='/js/html-cache/templates.js')
