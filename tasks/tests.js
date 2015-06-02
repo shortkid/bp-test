@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
    karma = require('gulp-karma'),
    gutil = require('gulp-util'),
-   karma = require('karma').server,
+   karma = require('gulp-karma'),
   config = require('./config');
 
 gulp.task('tests',function(cb) {

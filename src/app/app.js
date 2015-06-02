@@ -1,1 +1,4 @@
-angular.module('MyApp',[])
+angular.module('ngMyApp',[
+	'ngMyApp.welcome',
+	'ui.router'
+]);

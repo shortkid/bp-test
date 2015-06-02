@@ -1,0 +1,9 @@
+.row
+  h1.page-header Welcome
+  p Bootstrap Test
+  ul
+    li.dropdown
+      a.btn.dropdown-toggle Open
+    ul.dropdown-menu
+      li(ng-repeat="choice in welcomeItems")
+        a {{choice}}
