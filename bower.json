@@ -19,5 +19,28 @@
     "bootstrap-sass": "~3.3.4",
     "angular-bootstrap": "~0.13.0",
     "angular-ui-router": "~0.2.15"
+  },
+  "overrides": {
+      "angular": {
+          "main": {
+              "development": "angular.js",
+              "production": "angular.min.js"
+          }
+      },
+      "angular-bootstrap": {
+          "main": {
+              "development": "ui-bootstrap.js",
+              "production": "ui-bootstrap.min.js"
+          }
+      },
+      "angular-ui-router": {
+	  "main": {
+              "development": "angular-ui-router.js",
+              "production": "angular-ui-router.min.js"
+	  }
+      },
+      "bootstrap-sass": {
+	  "ignore": true
+      }
   }
 }
