@@ -6,8 +6,9 @@ html(lang="en")
     if prod
       link(rel="stylesheet", href="/css/style.css")
     else
-      <!-- include:js(js/**/*.js) -->
       <!-- include:css(css/**/*.css) -->
+      <!-- include:js(js-cache/**/*.js) -->
+      <!-- include:js(js/**/*.js) -->
 
   body(data-ng-app='#{appName}', data-ng-strict-di=prod)
 
@@ -16,5 +17,5 @@ html(lang="en")
 
 
     if prod
+      script(src='/js-cache/templates.js')
       script(src='/js/app.min.js')
-      script(src='/js/html-cache/templates.js')

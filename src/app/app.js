@@ -1,4 +1,5 @@
 angular.module('ngMyApp',[
-	'ngMyApp.welcome',
-	'ui.router'
+        'templates',
+	'ui.router',
+	'ngMyApp.welcome'
 ]);

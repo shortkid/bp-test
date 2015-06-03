@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
       fs = require('fs'),
     path = require('path'),
+  gulpif = require('gulp-if'),
   incSrc = require('gulp-include-source'),
  htmlmin = require('gulp-minify-html'),
    gutil = require('gulp-util'),
@@ -9,7 +10,7 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('html', function() {
+gulp.task('html', ['template', 'js', 'css'], function() {
 
 	return gulp
 		.src( config.paths.src.html )
@@ -24,11 +25,11 @@ gulp.task('html', function() {
 		.pipe(incSrc({ 
 			'cwd' : config.paths.dist.html
 			}))
-		.pipe(htmlmin({
-			'collapseWhitespace' : !config.isDev,
+		.pipe(gulpif( !config.isDev, htmlmin({
+			'collapseWhitespace' : true,
 			'removeComments'     : true,
 			'minifyCSS'          : true
-		}))
+		})))
 		.pipe( gulp
 			.dest( config.paths.dist.html ) 
 		);

@@ -4,13 +4,13 @@
 		"js" : "src/app/**/**/**/*.js",
 		"css" : "src/scss/*.scss",
 		"html" : [ "src/index.jade", "src/pages/**/*.jade" ], 
-		"template" : [ "src/templates/**/**/**/*.tpl.jade", "src/templates/**/**/**/*.tpl.html" ]
+		"template" : [ "src/app/**/**/**/*.tpl.jade", "src/app/**/**/**/*.tpl.html" ]
 	},
 	"dist" : {
 		"js" : "dist/js/",
 		"css" : "dist/css/",
 		"html" : "dist/",
-		"template" : "html-cache/"
+		"template" : "dist/js-cache/"
 	},
 	"test" : {
 		"tests" : "tests/spec/**/*.js",

@@ -6,9 +6,9 @@ var gulp = require('gulp'),
   config = require('./config');
    
 
-gulp.task('css',function() {
+gulp.task('css', ['clean'], function() {
 
-	gulp
+	return gulp
 		.src(config.paths.src.css)
 		.pipe(scss({
 			'sourceMap'    : config.isDev,

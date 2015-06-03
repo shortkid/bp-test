@@ -2,15 +2,10 @@ var gulp = require('gulp'),
    gutil = require('gulp-util'),
   config = require('./config');
 
-gulp.task('watch',['clean', 'js', 'css', 'html'], function() {
+gulp.task('watch', ['default', 'server'], function() {
 	
 	if (!config.isDev) { return; }
 	
-	config.bSync.init({
-		'server' : config.paths.dist.html
-	});
-	
-
 	gulp.watch( config.paths.src.css, ['css'] );
 	
 
@@ -25,4 +20,5 @@ gulp.task('watch',['clean', 'js', 'css', 'html'], function() {
 	gulp.watch( config.paths.src.template, ['template'] )
 	    .on('change', config.bSync.reload);
 
+	
 });

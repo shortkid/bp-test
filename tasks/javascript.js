@@ -7,9 +7,9 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   config = require('./config');
 
-gulp.task('js',function() {
+gulp.task('js', ['clean'], function() {
 	
-	gulp
+	return gulp
 		.src(config.paths.src.js)
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))
