@@ -1,4 +1,13 @@
-// Make sure to include the `ui.router` module as a dependency
+/**
+* @ngdoc directive
+* @name ngMyApp.directive:Welcome
+* @description 
+* welcome.tpl.html directive for /welcome/
+* 
+* @requires
+* ui.router ui.bootstrap
+*/
+
 angular.module('ngMyApp.welcome', [
   'ui.router',
   'ui.bootstrap'

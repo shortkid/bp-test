@@ -5,7 +5,7 @@
 * Simple App to handle the starting of a project
 * 
 * @requires
-* ui.router ui.bootstrap
+* templates ngMyApp.welcome
 */
 
 angular.module('ngMyApp',[
