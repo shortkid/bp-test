@@ -3,6 +3,8 @@ node_js:
   - "stable"
 
 before_script:
+  - npm install -g bower
   - npm install -g gulp
+  - bower install
 
 script: gulp travis
