@@ -2,7 +2,7 @@ var gulp = require('gulp'),
    gutil = require('gulp-util'),
   config = require('./config');
 
-gulp.task('default', ['css', 'template', 'js', 'html'], function() {
+gulp.task('default', ['docs', 'bower', 'css', 'template', 'js', 'html'], function() {
 		
 	if ( !config.isDev ) {
 		gutil.log(gutil.colors.red("Running in Production"));

@@ -33,12 +33,6 @@
               "production": "ui-bootstrap.min.js"
           }
       },
-      "angular-ui-router": {
-	  "main": {
-              "development": "angular-ui-router.js",
-              "production": "angular-ui-router.min.js"
-	  }
-      },
       "bootstrap-sass": {
 	  "ignore": true
       }

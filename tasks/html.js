@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('html', ['template', 'js', 'css'], function() {
+gulp.task('html', ['bower', 'template', 'js', 'css'], function() {
 
 	return gulp
 		.src( config.paths.src.html )

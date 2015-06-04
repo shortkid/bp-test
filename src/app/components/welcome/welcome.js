@@ -1,29 +1,41 @@
-angular.module( 'ngMyApp.welcome', [
+// Make sure to include the `ui.router` module as a dependency
+angular.module('ngMyApp.welcome', [
   'ui.router',
   'ui.bootstrap'
 ])
 
-.config(function config( $stateProvider ) {
+.config(['$stateProvider', '$urlRouterProvider',
 
-  $stateProvider.state( 'welcome', {
-    url: '/',
-    views: {
-      "main": {
-        controller: 'WelcomeCtrl',
-        templateUrl: 'welcome/welcome.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'Even in the future things are broken' }
-  });
+    function ($stateProvider,   $urlRouterProvider) {
 
-})
+      $stateProvider
 
-.controller( 'WelcomeCtrl', function WelcomeCtrl( $scope ) {
+        .state('welcome', {
 
-  $scope.welcomeItems = [
-    "Curly Howard",
-    "Larry Fine",
-    "Moe Howard"
-  ];
+          url : '/welcome',
+	  controller : 'WelcomeCtrl',
+          templateUrl : 'welcome/welcome.tpl.html'
+
+        })
+    }
+  ]
+)
+
+
+.controller( 'WelcomeCtrl', function AboutCtrl( $scope ) {
+
+  $scope.myInterval = 5000;
+  var slides = $scope.slides = [];
+  $scope.addSlide = function() {
+    var newWidth = 600 + slides.length + 1;
+    slides.push({
+      image: 'http://placekitten.com/' + newWidth + '/300',
+      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
+        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+    });
+  };
+  for (var i=0; i<4; i++) {
+    $scope.addSlide();
+  }
 
 });

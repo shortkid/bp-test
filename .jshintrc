@@ -22,7 +22,7 @@
   "loopfunc" : true,
   "globals" : {
     "define": true,
-    "exports": true,
+    "requirejs": true,
     "angular": true
   }
 }

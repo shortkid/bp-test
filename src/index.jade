@@ -6,17 +6,19 @@ html(lang="en")
     if prod
       link(rel="stylesheet", href="/css/style.css")
     else
+      script(src='js-libs/public.js')
+      script(src='//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js')
       <!-- include:css(css/**/*.css) -->
-      <!-- include:js(js-libs/*.js) -->
       <!-- include:js(js-cache/**/*.js) -->
       <!-- include:js(js/**/*.js) -->
 
   body(data-ng-app='#{appName}', data-ng-strict-di=prod)
 
-
     include jade/header/header.jade
 
-
+    .container.ui-view
+ 
     if prod
-      script(src='/js-cache/templates.js')
-      script(src='/js/app.min.js')
+      script(src='/js-libs/libs.min.js')
+      script(src='/js-cache/templates.js',async)
+      script(src='/js/app.min.js',async)

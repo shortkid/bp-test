@@ -3,7 +3,7 @@ gulpDocs = require('gulp-ngdocs'),
   config = require('./config');
 
 
-gulp.task('docs',function() {
+gulp.task('docs', ['clean'], function() {
 
   return gulp
 	  .src(config.paths.src.js)

@@ -21,9 +21,11 @@ gulp.task('js', ['clean'], function() {
 			'drop_debugger'	   : !config.isDev,
 			'drop_console'	   : !config.isDev,
 			'unsafe'	   : true,
-			'beautify'	   : config.isDev
+			'output' : {
+				'beautify'	   : config.isDev
+			}
 		}))
-		.pipe(gulpif( !config.isDev,concat('prod.js') ))
+		.pipe(gulpif( !config.isDev, concat('prod.js') ))
 		.pipe(gulp
 			.dest( config.paths.dist.js )
 		);

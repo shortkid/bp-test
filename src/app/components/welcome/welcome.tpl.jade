@@ -1,9 +1,11 @@
 .row
   h1.page-header Welcome
-  p Bootstrap Test
-  ul
-    li.dropdown
-      a.btn.dropdown-toggle Open
-    ul.dropdown-menu
-      li(ng-repeat="choice in welcomeItems")
-        a {{choice}}
+  p: Boot Strap Testing Page
+
+  div
+    carousel(interval="myInterval")
+      slide(ng-repeat="slide in slides",active="slide.active")
+        img(ng-src="{{slide.image}}",style="margin:auto;")
+        .carousel-caption
+          h4 Slide {{$index}}
+          p {{slide.text}}

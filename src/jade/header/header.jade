@@ -1,4 +1,6 @@
 nav.navbar.navbar-default
   ul.nav.navbar-nav
-    li
-      a(href="/welcome") Welcome Page
+    li(ui-sref-active="active")
+      a(ui-sref="welcome") Welcome Page
+
+  button.navbar-toggle(type="button",ng-init="menuCollapsed = true",ng-click="menuCollapsed = ! menuCollapsed")

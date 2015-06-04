@@ -23,6 +23,7 @@ gulp.task('template', ['clean'], function() {
 		}))
 		.pipe(jsCache({
 			'moduleName'  : 'templates',
+			'standalone'  : true,
 			'stripPrefix' : 'components/'
 		}))
 		.pipe(gulpif(config.isDev, concat('templates.js')))
