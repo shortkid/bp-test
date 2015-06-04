@@ -29,7 +29,7 @@
       },
       "angular-bootstrap": {
           "main": {
-              "development": "ui-bootstrap.js",
+              "development": "ui-bootstrap-tpls.js",
               "production": "ui-bootstrap.min.js"
           }
       },
